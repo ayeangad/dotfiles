@@ -1,0 +1,52 @@
+
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+
+keybind = ctrl+tab=text:\x1b[27;5;9~
+keybind = ctrl+shift+tab=text:\x1b[27;6;9~
+
+
+background = #000000
+foreground = #ffffff
+# This makes the window look cleaner on Linux
+window-decoration = false
+font-size = 10
+font-family = "JetBrainsMono Nerd Font Mono"
+font-style = Regular
+window-padding-x = 10
+window-padding-y = 10
+
+confirm-close-surface = false
+
+# Makes the terminal pop open instantly without an animation
+confirm-close-surface = false
+window-decoration = false
+
+# Hides the title bar and adds a slight transparency
+window-decoration = false
+background-opacity = 0.95
+
+
+# What to run inside the quick terminal
+# command = /home/angad/.cargo/bin/yazi
+
+# This launches a new Yazi window as an overlay without breaking your main shell
+keybind = global:ctrl+shift+y=toggle_quick_terminal
+
+# Visuals (Note: 'height' is now part of the screen/position logic)
+quick-terminal-animation-duration = 0.2
+quick-terminal-position = top
+
+# Use this for size if you are on the latest version:
+# If 'quick-terminal-height' failed, try 'window-height' inside a specific override
+# or just stick to the defaults for now to get it working.
+
+
+
+cursor-style = block
+cursor-style-blink = false
+custom-shader = ~/.config/ghostty/shaders/cursor_smear_fade.glsl
+
+window-padding-x = 0
+window-padding-y = 0
